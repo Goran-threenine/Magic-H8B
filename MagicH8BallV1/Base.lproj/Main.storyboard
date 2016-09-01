@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagicH8BallV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dn-5z-Z7r">
+                                <rect key="frame" x="217" y="444" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="H8Ball-Black-BIGV6-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p7t-2d-3Ug">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="351"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="ld9-XB-y8o"/>
+                                    <constraint firstAttribute="height" constant="342" id="mb2-b6-x4o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ON2-D8-Gxx">
+                                <rect key="frame" x="74" y="323" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.92807358503341675" green="0.10748045891523361" blue="0.043712407350540161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bz8-Fj-ewz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="SHAKE AND HATE">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dc1-44-Y6l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sep-QZ-hTi">
+                                <rect key="frame" x="20" y="384" width="335" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2FI-Sh-L9d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ot-SN-mZd" customClass="GADBannerView">
+                                <rect key="frame" x="28" y="609" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="55b-HA-WYl"/>
+                                    <constraint firstAttribute="height" constant="50" id="zlt-fH-Yba"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ghk-YV-4fh">
+                                <rect key="frame" x="20" y="406" width="335" height="160"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKk-iC-D87">
+                                <rect key="frame" x="0.0" y="494" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hVL-LX-xo8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="PLAY AGAIN">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shakeReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hq5-3J-T0Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Think of someone you H8..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-jf-y0s">
+                                <rect key="frame" x="74" y="265" width="250" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QdY-jf-y0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="10L-Lt-mQa"/>
+                            <constraint firstItem="7Ot-SN-mZd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="6Ma-Qc-d7N"/>
+                            <constraint firstItem="Sep-QZ-hTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CYa-AG-3Bf"/>
+                            <constraint firstItem="ON2-D8-Gxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ei3-yX-iIE"/>
+                            <constraint firstItem="iKk-iC-D87" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FPV-ft-Tr4"/>
+                            <constraint firstItem="Ghk-YV-4fh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gew-3W-i41"/>
+                            <constraint firstItem="Sep-QZ-hTi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="I42-Is-6ri"/>
+                            <constraint firstItem="iKk-iC-D87" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JTA-4c-JlM"/>
+                            <constraint firstItem="ON2-D8-Gxx" firstAttribute="top" secondItem="QdY-jf-y0s" secondAttribute="bottom" constant="8" id="JTs-u8-kk0"/>
+                            <constraint firstItem="7Ot-SN-mZd" firstAttribute="top" secondItem="Ghk-YV-4fh" secondAttribute="bottom" constant="43" id="OLa-6t-aAW"/>
+                            <constraint firstItem="ON2-D8-Gxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="br0-Uh-28V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Ot-SN-mZd" secondAttribute="bottom" id="cKQ-sM-2KZ"/>
+                            <constraint firstItem="Sep-QZ-hTi" firstAttribute="top" secondItem="ON2-D8-Gxx" secondAttribute="bottom" constant="250" id="jZR-GR-mHZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Ot-SN-mZd" secondAttribute="trailing" constant="7" id="wZP-gi-lON"/>
+                            <constraint firstItem="p7t-2d-3Ug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x6K-hh-Kds"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bannerView" destination="7Ot-SN-mZd" id="nNP-jK-NFs"/>
+                        <outlet property="joke" destination="Sep-QZ-hTi" id="VVQ-ra-zTU"/>
+                        <outlet property="joke1" destination="Ghk-YV-4fh" id="pcL-OQ-Wxw"/>
+                        <outlet property="playAgain" destination="iKk-iC-D87" id="z3M-Nk-aur"/>
+                        <outlet property="shake" destination="ON2-D8-Gxx" id="yhp-1b-uu8"/>
+                        <outlet property="think" destination="QdY-jf-y0s" id="VRg-nV-A9X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.5" y="539.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="H8Ball-Black-BIGV6-2.jpg" width="526" height="358"/>
+    </resources>
+</document>
